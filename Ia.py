@@ -9,7 +9,7 @@ API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=API_KEY)
 
 # Usamos el modelo flash porque es rápido y no gasta saldo
-modelo = genai.GenerativeModel('gemini-1.5-flash')
+modelo = genai.GenerativeModel('gemini-2.5-flash')
 
 # Interfaz en la pantalla
 st.title("🍔 GastroPost IA")
